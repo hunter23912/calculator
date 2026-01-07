@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import { use } from "react";
 import { Link } from "react-router-dom";
 
 class NavBar extends Component {
   state = {};
   render() {
     return (
-      <nav className="navbar navbar-expand-sm bg-body-tertiary">
+      <nav className="navbar navbar-expand-sm bg-body-tertiary" style={{ userSelect: "none" }}>
         <div className="container">
           <Link className="navbar-brand" to="/">
             Web
